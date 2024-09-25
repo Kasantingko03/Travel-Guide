@@ -1,0 +1,123 @@
+/* General Styles */
+.body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.Header-Title {
+  font-weight: bold;
+  color: #BC002D;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 45px;
+  padding-right: 25px;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #BC002D; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.Home-Button, .Attractions-Button, .Restaurants-Button {
+  text-decoration: underline;
+  color: white;
+  font-size: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Attractions Section */
+.attractions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-right: 200px;
+}
+
+.attraction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.attraction:hover {
+  transform: translateY(-5px); /* Move the card slightly up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+.contact {
+  color: white;
+  font-size: 13px;
+  margin-right: 5x;
+}
+
+/* Restaurants Section */
+.restaurants-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  max-width: 1200px;
+  margin-left: 110px;
+}
+
+.restaurant-card {
+  width: 150px; /* limit card width */
+  padding: 10px;
+  padding-top: 0px;
+  margin: 75px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.restaurant-card h3 {
+  font-size: 16px; 
+  margin: 10px 0;
+  color: #BC002D;
+}
+
+.restaurant-card p {
+  font-size: 14px; 
+  margin: 5px 0;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px); /* Move the card slightly up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #BC002D;
+  height: 25px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
