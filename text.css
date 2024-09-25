@@ -1,0 +1,26 @@
+.Homepage,
+.AboutHomePage{
+  display: flex;
+  justify-content: center;
+}
+.homePageParagraph{
+  color: #BC002D;
+  text-align: center;
+  width: 700px;
+  font-size: 16px;
+}
+.attraction-text {
+  margin-left: 20px;
+  padding: 0;
+}
+
+.attraction-text h1 {
+  color: #BC002D;
+}
+
+.attraction-text p {
+  font-size: 16px;
+  color: #333;
+  max-width: 540px;
+  height: 120px;
+}
