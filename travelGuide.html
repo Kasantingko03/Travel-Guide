@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel Guide</title>
+    <link rel="website icon" type="png" href="Images/location_icon.png">
+    <link rel="stylesheet" href="Styles/photo.css">
+    <link rel="stylesheet" href="Styles/text.css">
+    <link rel="stylesheet" href="Styles/general.css">
+    <script>
+      function showHome() {
+        document.getElementById('homePage').style.display = 'block';
+        document.getElementById('attractionsPage').style.display = 'none';
+        document.getElementById('restaurantsPage').style.display = 'none';
+      }
+
+      function showAttractions() {
+        document.getElementById('homePage').style.display = 'none';
+        document.getElementById('attractionsPage').style.display = 'block';
+        document.getElementById('restaurantsPage').style.display = 'none';
+      }
+
+      function showRestaurants() {
+        document.getElementById('homePage').style.display = 'none';
+        document.getElementById('attractionsPage').style.display = 'none';
+        document.getElementById('restaurantsPage').style.display = 'block';
+      }
+    </script>
+  </head>
+
+  <body class="body">
+
+    <!-- Top image and title -->
+    <div class="header">
+      <img class="Japan-image" src="Images/Header.jpeg" width="100%" height="200" alt="Japan Image">
+      <p class="Header-Title">JAPAN</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="Home">
+        <button class="Home-Button" onclick="showHome()">Home</button>
+      </div>
+      <div class="Attractions">
+        <button class="Attractions-Button" onclick="showAttractions()">Attractions</button>
+      </div>
+      <div class="Restaurants">
+        <button class="Restaurants-Button" onclick="showRestaurants()">Restaurants</button>
+      </div>
+    </div>
+
+    <!-- Homepage Section -->
+    <div id="homePage">
+      <div class="Homepage">
+        <img class="HomePageImage" src="Images/HomePage.webp" alt="HomePage Image">
+      </div>
+
+      <!-- About Section -->
+      <div class="AboutHomePage">
+        <p class="homePageParagraph">
+          Japan, an island nation in East Asia, is a land of contrasts where ancient traditions meet modern innovation. 
+          From the bustling streets of Tokyo to the tranquil temples of Kyoto, Japan offers visitors a unique blend 
+          of cultural heritage and cutting-edge technology. Known for its breathtaking landscapes, Japan is home to 
+          iconic sights like Mount Fuji, beautiful cherry blossoms, and serene Zen gardens. Whether you're exploring 
+          the vibrant cityscapes, tasting the exquisite cuisine, or experiencing traditional festivals, Japan is a 
+          country that captivates with its history, artistry, and warm hospitality.
+        </p>
+      </div>
+    </div>
+
+    <!-- Attractions Section -->
+    <div id="attractionsPage" style="display:none;">
+      <div class="attractions-container">
+        <div class="attraction">
+          <img class="attraction-image" src="Images/Ghibli-Museum.jpeg" alt="Ghibli Museum">
+          <div class="attraction-text">
+            <h1>Ghibli Museum</h1>
+            <p>The Ghibli Museum is a museum showcasing 
+              the work of the Japanese animation studio
+              Studio Ghibli. It is located in Inokashira 
+              Park in Mitaka, a western city of Tokyo, 
+              Japan.</p>
+          </div>
+        </div>
+
+        <div class="attraction">
+          <img class="attraction-image" src="Images/MtFuji.jpeg" alt="Mount Fuji">
+          <div class="attraction-text">
+            <h1>Mount Fuji</h1>
+            <p>Japan&#39;s Mt. Fuji is an active volcano about 
+              100 kilometers southwest of Tokyo. 
+              Commonly called “Fuji-san,” it&#39;s the country&#39;s 
+              tallest peak, at 3,776 meters. A pilgrimage 
+              site for centuries, it&#39;s considered one of 
+              Japan&#39;s 3 sacred mountains, and summit hikes 
+              remain a popular activity. Its iconic profile 
+              is the subject of numerous works of art, notably 
+              Edo Period prints by Hokusai and Hiroshige.</p>
+          </div>
+        </div>
+
+        <div class="attraction">
+          <img class="attraction-image" src="Images/sky-building.jpeg" alt="Umeda Sky Building">
+          <div class="attraction-text">
+            <h1>Umeda Sky Building</h1>
+            <p>The Umeda Sky Building is a two-tower mixed-use skyscraper 
+              located in Osaka, Japan. Located in the outskirts of Umeda 
+              business district in Kita-ku, Osaka, the Umeda Sky Building 
+              consists of two 40-story towers that connect at their two 
+              uppermost stories, which are interconnected via glass bridges 
+              with escalators and elevators which crosses the tower&#39;s open 
+              atrium space in the ground floor area. It is currently the 
+              fifteenth-tallest building in the prefecture, and is one of 
+              the city&#39;s most recognizable landmarks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Restaurants Section (Hidden by Default) -->
+<div id="restaurantsPage" class="content-section" style="display: none;">
+  <div class="restaurants-container">
+    <!-- First row -->
+    <div class="restaurant-card">
+      <a href="https://www.pokemoncenter-online.com/cafe/"><img src="Images/restaurant1.jpeg" alt=""></a>
+      <h3>Asakusa Gyukatsu (Beef Cutlet)</h3>
+      <p>Taito City, Kaminarimon, 2 Chome&#x2212;17&#x2212;10 雷門上村ビル B1F</p>
+      <p>Tokyo, Japan</p>
+      <p>+81 50-1722-0596</p>
+    </div>
+    <div class="restaurant-card">
+      <img src="Images/restaurant2.jpeg" alt="Restaurant Name">
+      <h3>Yakitori Abe</h3>
+      <p>Miyuki House 1F, Kamiosaki 3-3-4</p>
+      <p>Shinigawa, Japan</p>
+      <p>+81 3-5422-9834</p>
+    </div>
+    <div class="restaurant-card">
+      <img src="Images/restaurant3.jpeg" alt="New Matsuzaka Roppongi">
+      <h3>New Matsuzaka Roppongi</h3>
+      <p>〒106-0032 Roppongi, 6 Chome&#x2212;2&#x2212;6 GEMS六本木 7F</p>
+      <p>Minato City, Japan</p>
+      <p>+815054946202</p>
+    </div>
+
+    <!-- Second row -->
+    <div class="restaurant-card">
+      <img src="Images/restaurant4.jpeg" alt="Restaurant 4 Name">
+      <h3>Ichiran Ramen</h3>
+      <p>Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome&#x2212;34&#x2212;11, Peace Bldg., B1F</p>
+      <p>Shinjuku City, Japan</p>
+      <p>+81 50-1808-2529</p>
+    </div>
+    <div class="restaurant-card">
+      <img src="Images/restaurant5.jpeg" alt="Restaurant 5 Name">
+      <h3>UobeiGoulabe</h3>
+      <p>Japan, 〒150-0043 Tokyo, Shibuya City, Dogenzaka, 2 Chome&#x2212;29&#x2212;11, Central Bldg. 6, １階</p>
+      <p>Shibuya City, Japan</p>
+      <p>+81 3-3462-0241</p>
+    </div>
+    <div class="restaurant-card">
+      <img src="Images/restaurant6.jpeg" alt="Restaurant 6 Name">
+      <h3>Zauo Fishing Restaurant</h3>
+      <p>Japan, 〒542-0086 Osaka, Chuo Ward, Nipponbashi, 1 Chome&#x2212;1&#x2212;13, Sotetsu Grand Frésa, B1F</p>
+      <p>Osaka, Japan</p>
+      <p>+81 6-6212-5882</p>
+    </div>
+    <!-- Third row (New 1 by 3) -->
+    <div class="restaurant-card">
+      <img src="Images/restaurant7.webp" alt="Restaurant 7 Name">
+      <h3>Nakatanidou</h3>
+      <p>Higashimuki Shopping Street</p>
+      <p>Nara, Japan</p>
+      <p>+81 742-23-0141</p>
+    </div>
+    <div class="restaurant-card">
+      <img src="Images/restaurant8.jpeg" alt="Restaurant 8 Name">
+      <h3>Sushi no Midori Shibuya</h3>
+      <p>〒150-0043 Tokyo, Shibuya City, Dogenzaka, 1 Chome&#x2212;12&#x2212;3 マークシティイースト ４Ｆ</p>
+      <p>Shibuya City, Japan</p>
+      <p>+81 3-XXXX-XXXX</p>
+    </div>
+    <div class="restaurant-card">
+      <img src="Images/restaurant9.jpeg" alt="Restaurant 9 Name">
+      <h3>Pokemon Cafe Tokyo Nihonbashi</h3>
+      <p>Japan, 〒103-0027 Tokyo, Chuo City, Nihonbashi, 2 Chome&#x2212;11&#x2212;2 日本橋髙島屋S.C.東館 ５階</p>
+      <p>Chuo City, Japan</p>
+      <p>+81 3-6262-3439</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="contact">Contact Info: aguinto2@sfsu.edu</p>
+    </div>
+  </body>
+</html>
