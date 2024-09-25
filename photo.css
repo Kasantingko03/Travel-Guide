@@ -1,0 +1,21 @@
+.Japan-image{
+  width: 100%;
+  display: flex;
+  display: block;
+}
+.HomePageImage{
+  width: 350px;
+  height: 190px;
+  padding-top: 25px;
+  }
+
+  .attraction-image {
+  width: 250px;
+  height: 200px;
+}
+.restaurant-card img {
+  width: 170px; 
+  height: 170px; 
+  object-fit: cover; 
+}
+
